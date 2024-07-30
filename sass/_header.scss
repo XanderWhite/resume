@@ -1,0 +1,75 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__nav {
+    max-width: 800px;
+    width: 100%;
+  }
+  &__menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        width: 100%;
+        bottom: -5px;
+        left: 0;
+        height: 3px;
+        background-color: $color-yellow;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.logo {
+  flex: 1 1 300px;
+  height: 20px;
+  &__span {
+    position: relative;
+    font-family: 'Audiowide-Regular';
+  font-weight: 400;
+font-size: 20px;
+
+&::after{
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  content: '';
+  display: inline-block;
+  background-color: $color-text;
+  right: -8px;
+  // bottom: 0;
+  animation: anim_logo 1s infinite;
+  opacity: 0;
+}
+  }
+}
+
+@keyframes anim_logo{
+  50%{
+    opacity: 1;
+  }
+}
