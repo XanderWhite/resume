@@ -22,7 +22,6 @@
 
 
         <main class="main">
-            <!-- <h1 class="visually-hidden">Резюме</h1> -->
             <section class="intro ">
                 <div class="intro__inner container">
                     <header class="header container">
@@ -51,10 +50,16 @@
                             мной</p>
                         <button class="btn btn_contact">свяжитесь со мной</button>
                     </div>
-                    <div class="intro__me"></div>
+                    <div class="intro__me">
+                        <div class="intro__me__circle"></div>
+                        <picture class='intro__me__photo'>
+                            <source type='image/avif' srcset='./images/intro.avif'>
+                            <source type='image/webp' srcset='./images/intro.webp'>
+                            <img class="intro__me__img" src='./images/intro.png' alt='photo'>
+                        </picture>
+                    </div>
                 </div>
             </section>
-
             <section class="skills">
                 <h2 class="visually-hidden">skills</h2>
                 <div class="skills__inner container">

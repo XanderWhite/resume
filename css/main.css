@@ -98,6 +98,14 @@ input, textarea {
   transition: 0.2s;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .btn {
   padding: 14px 40px;
   text-transform: uppercase;
@@ -120,6 +128,7 @@ input, textarea {
 .page {
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.47);
           box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.47);
 }
@@ -276,16 +285,34 @@ input, textarea {
   line-height: 52.31px;
 }
 .intro__me {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   width: 575px;
   height: 575px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+.intro__me__circle {
+  width: 100%;
+  height: 100%;
   border: 67px solid #00C4F0;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 152px 0px rgba(0, 196, 240, 0.4196078431), inset 0px 0px 152px 0px rgba(0, 196, 240, 0.4196078431);
           box-shadow: 0px 0px 152px 0px rgba(0, 196, 240, 0.4196078431), inset 0px 0px 152px 0px rgba(0, 196, 240, 0.4196078431);
+}
+.intro__me__photo {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 720px;
+  width: 600px;
+  bottom: -100px;
+  left: 43%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .skills {
