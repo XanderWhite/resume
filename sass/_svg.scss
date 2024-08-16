@@ -1,0 +1,24 @@
+.svg-fill {
+	fill: $color-blue;
+
+	&-stroke {
+		stroke: $color-blue;
+	}
+}
+
+.skill__svg {
+    width: 100%;
+    height: 100px;
+}
+
+.svg-intro-react{
+	position: absolute;
+    left: 6px;
+    top: -4px;
+    min-width: 120px;
+	animation: anim_rotate360 50s linear infinite;
+}
+
+.svg-skill-react{
+	min-height: 120px;
+}
