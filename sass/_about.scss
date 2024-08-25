@@ -83,6 +83,7 @@ bottom: -45px;
     translate: 0 -50%;
     box-shadow: 0px 4px 70px 0px $color-white-shadow,
       inset 0px 4px 70px 0px $color-white-shadow;
+      animation: anim_scale10 5s infinite alternate ;
   }
   &_yellow {
     width: 356px;
@@ -92,6 +93,7 @@ bottom: -45px;
     border: 34px solid $color-yellow;
     box-shadow: 0px 4px 70px 0px $color-yellow-shadow,
       inset 0px 4px 70px 0px $color-yellow-shadow;
+      animation: anim_scale10  3s 2s infinite alternate linear;
   }
   &_blue {
     box-shadow: 0px 4px 70px 0px $color-blue-shadow,
@@ -101,5 +103,6 @@ bottom: -45px;
     bottom: 50px;
     right: 60px;
     border: 55px solid $color-blue;
+    animation: anim_scale10  4s 1s infinite alternate  linear;
   }
 }

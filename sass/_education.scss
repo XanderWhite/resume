@@ -29,6 +29,16 @@ gap: 30px;
     border-radius: 29px;
 border-bottom-left-radius: 0;
 box-shadow: 4px 4px 6px 0px $color-grayBg2-shadow;
+transform: translateX(-500px) scaleX(2) scaleY(0.2);
+transform-origin: 100% 50%;
+filter: blur(40px);
+opacity: 0;
+// translate: 3s;
+
+&.active{
+  animation: slide-out-blurred-left 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060)  both ;
+}
+
 
   &__title {
     display: flex;
