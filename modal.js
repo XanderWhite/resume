@@ -1,4 +1,4 @@
-const LOGO = "XW_IT";
+const LOGO = "Xander_White";
 
 const logoElem = document.querySelector(".logo__span");
 
